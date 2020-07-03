@@ -1,4 +1,7 @@
 require_relative '../lib/grocery'
+require_relative '../lib/data_loader'
+require_relative '../lib/models'
+require_relative '../lib/repository'
 
 RSpec.configure do |config|
   config.expect_with :rspec do |expectations|

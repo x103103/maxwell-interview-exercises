@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "name": "Milk Discount",
+    "quantity": 2,
+    "amount_in_cents": 294
+  },
+  {
+    "id": 1,
+    "name": "Bread Discount",
+    "quantity": 3,
+    "amount_in_cents": 50
+  }
+]
