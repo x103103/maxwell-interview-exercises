@@ -2,8 +2,8 @@ class Order
   attr_reader :items, :repository
 
   def initialize(products, repository)
-    @items = build_items(products)
     @repository = repository
+    @items = build_items(products)
   end
 
   def price_with_discount
