@@ -10,5 +10,11 @@
     "name": "Bread",
     "price_in_cents": 120,
     "discount_ids": [2]
+  },
+  {
+    "id": 3,
+    "name": "Banana",
+    "price_in_cents": 200,
+    "discount_ids": []
   }
 ]

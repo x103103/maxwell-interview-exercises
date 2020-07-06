@@ -1,11 +1,10 @@
 class OrderItem
-  attr_reader :product, :quantity, :repo
+  attr_reader :product, :quantity, :repository
 
-  # @param [Repository] repo
-  def initialize(product, quantity, repo)
+  def initialize(product, quantity, repository)
     @product = product
     @quantity = quantity
-    @repo = repo
+    @repository = repository
   end
 
   def price
@@ -13,7 +12,7 @@ class OrderItem
   end
 
   def discount
-    discounts = repo
+    discounts = repository
                   .find_discounts(product.discount_ids)
                   .select { |d| d.quantity <= quantity }
     discounts.map { |d| apply_discount(d) }.sum
